@@ -95,6 +95,7 @@ public class UnitSelectionManager : MonoBehaviour
                 // Calculate offset for square formation
                 float xOffset = (col - (unitsPerRow - 1) * 0.5f) * formationSpacing;
                 float yOffset = (row - (unitsPerRow - 1) * 0.5f) * formationSpacing;
+                Debug.Log("xOffset: " + xOffset + " yOffset: " + yOffset);
                 
                 Vector3 unitOffset = new Vector3(xOffset, yOffset, 0);
                 selectedUnits[i].MoveToPosition(targetPosition + unitOffset);
